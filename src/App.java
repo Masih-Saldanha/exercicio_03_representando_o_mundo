@@ -5,16 +5,13 @@ public class App {
         newStudent.setEmail("fulano@email.com");
         newStudent.setMessage("Estou tendo dificuldade nessa questão.");
 
-        Question newQuestion = new Question();
-        newQuestion.setSubject("Geografia");
-        newQuestion.setNumber(1);
+        newStudent.question.setSubject("Geografia");
+        newStudent.question.setNumber(1);
 
-        newStudent.setQuestion(newQuestion);
-
-        System.out.println(newStudent.getName());
-        System.out.println(newStudent.getEmail());
-        System.out.println(newStudent.getMessage());
-        System.out.println(newStudent.getQuestion().getSubject());
-        System.out.println(newStudent.getQuestion().getNumber());
+        System.out.println("Aluno: " + newStudent.getName());
+        System.out.println("E-mail: " + newStudent.getEmail());
+        System.out.println("Mensagem: " + newStudent.getMessage());
+        System.out.println("Matéria: " + newStudent.getQuestion().getSubject());
+        System.out.println("Questão Nº: " + newStudent.getQuestion().getNumber());
     }
 }

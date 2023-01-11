@@ -1,8 +1,8 @@
 public class Student {
     private String name;
     private String email;
-    private Question question;
     private String message;
+    protected Question question = new Question();
 
     public String getName() {
         return name;
@@ -20,19 +20,15 @@ public class Student {
         this.email = email;
     }
 
-    public Question getQuestion() {
-        return question;
-    }
-
-    public void setQuestion(Question question) {
-        this.question = question;
-    }
-
     public String getMessage() {
         return message;
     }
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public Question getQuestion() {
+        return question;
     }
 }
